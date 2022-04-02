@@ -1,1 +1,12 @@
+[Unit]
+Description=run script on full screen
 
+[Service]
+Type=simple
+WorkingDirectory=/home/parallels/doc
+User=parallels
+Group=parallels
+ExecStart=/home/parallels/doc/full.bash
+
+[Install]
+WantedBy=multi-user.target
